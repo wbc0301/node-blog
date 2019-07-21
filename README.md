@@ -9,5 +9,5 @@
 5. db层： 
    1. conf/db.js 连接数据库配置文件：host,port,database,user,passsword
    2. db/blog.js,redis.js 
-      -连接 mysql `mysql.createConnection(MYSQL_CONF).connect();` 声明 `exec(sql){return new Promise(...)}` 并导出。
-      -连接 redis
+      - 连接 mysql `mysql.createConnection(MYSQL_CONF).connect();` 声明 `exec(sql){return new Promise(...)}` 并导出。
+      - 连接 redis
