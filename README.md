@@ -3,7 +3,7 @@
 
 ## 项目从服务到数据经过五层拆分
 1. www.js 层：  创建服务，监听端口
-2. app.js 层：  解析 path， query， 处理 post 请求的 data， 引入路由， 处理404
+2. app.js 层：  解析 path， query， 处理 post 请求的 data， 处理 coookie session, 引入路由， 处理404
 3. router 层：  处理路由 并对路由获取到的数据进行包装（成功，失败）。通过不同的URL判断，调用不同的 controller 并且传入参数。
 4. controller层：  处理数据, 通过不同的 sql 调用 `exec(sql)`，并返回结果.
 5. db层： 
