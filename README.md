@@ -15,7 +15,7 @@
       声明：`function set(key, val){redisClient.set(key, val, redis.print)}`并导出。
       声明：`function get(key) {return new Promise(...)}` 并导出。
       
-## 通过 escape 函数预防 sql 注入。
+## 预防 sql 注入。
    #### 攻击方式：通过输入可执行的 sql 语句，攻击数据库。  预防原理：转义特殊字符
    ```
    const { exec, escape } = require('../db/mysql');
@@ -23,7 +23,7 @@
    username = escape(username);
    password = escape(password);
    ```
-## xss 攻击
+## 预防 xss 攻击
    #### 攻击方式： 通过在页面内容中掺杂可执行的 js 代码，以实现攻击。  预防原理：转义特殊字符
    ```
    const xss = require('xss');
