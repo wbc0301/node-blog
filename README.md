@@ -7,4 +7,4 @@
 3. router 层：  处理路由 并对路由获取到的数据进行包装（成功，失败）。
 4. controller层：  处理数据
 5. db层： 
-  >连接数据库配置文件：host,port,database,user,passsword
+   1. 连接数据库配置文件：host,port,database,user,passsword
