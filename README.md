@@ -15,3 +15,10 @@
       声明：`function set(key, val){redisClient.set(key, val, redis.print)}`并导出。
       声明：`function get(key) {return new Promise(...)}` 并导出。
       
+## 通过 escape 函数预防 sql 注入。
+   ```
+   const { exec, escape } = require('../db/mysql');
+   username = escape(username);
+   password = escape(password);
+   ```
+   
